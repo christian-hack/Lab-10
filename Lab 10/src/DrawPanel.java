@@ -1,4 +1,20 @@
+import java.awt.Graphics;
+import java.util.ArrayList;
 
-public class DrawPanel {
+import javax.swing.JPanel;
+
+public class DrawPanel extends JPanel{
+	
+	DrawPanel() {
+		
+	}
+	private ArrayList<Shape> shapelist;
+	
+	public void addShape(Graphics graphics) {
+		
+	}
+	protected void paintComponent(Graphics graphics) {
+		
+	}
 
 }
