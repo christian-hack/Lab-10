@@ -5,15 +5,20 @@ import javax.swing.JPanel;
 
 public class DrawPanel extends JPanel{
 	
-	DrawPanel() {
-		
-	}
 	private ArrayList<Shape> shapelist;
 	
-	public void addShape(Graphics graphics) {
-		
+	public DrawPanel() {
+		shapelist = new ArrayList<Shape>();
+	}
+	public void addShape(Shape shape) {
+		shapelist.add(shape);
 	}
 	protected void paintComponent(Graphics graphics) {
+		
+		for (int index = 0; index < shapelist.size(); ++index) 
+		{
+			shapelist.get(index).draw(graphics);
+		}
 		
 	}
 

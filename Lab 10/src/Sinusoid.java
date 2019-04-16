@@ -75,17 +75,18 @@ public class Sinusoid extends Shape
 			// TODO: calculate next x,y point
 			//y = yOffset + amplitude * sin(radians)
 			//x = xOffset + i * dx;
-			int xNext = ... // TODO:
-			int yNext = ... // TODO:
+			// TODO:
+			// TODO:
+			int yNext = (int)(y0 + amplitude*Math.sin(rad));
+			int xNext = (int)(x0 + i*dx);
 			
 			// TODO: create a point and store it into the locations list
+			Point np = new Point(xNext, yNext);
+			location[i] = np;
 		}
 	}
-
 	/* (non-Javadoc)
-	 * @see Drawable#draw(java.awt.Graphics)
-	 * 
-	 * The stroke width of the signal is set to 5.
+	 * @see Drawable#draw(java.awt.Graphics)The stroke width of the signal is set to 5.
 	 * Uses a sequence of line segments to draw a sinusoidal wave
 	 */
 	@Override
@@ -99,7 +100,9 @@ public class Sinusoid extends Shape
         int nPoints = location.length;
         
         // TODO: Draw a sequence of connected line segments to render a sinusoid
-
+       for (int index = 0; index < nPoints -1; ++index) {
+    	   graphics.drawLine(location[index].x, location[index].y, location[index+1].x, location[index+1].y);
+       }
 	}
 
 }
