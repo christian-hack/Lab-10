@@ -34,6 +34,10 @@ public class DrawFrame extends JFrame{
 		drawPanel.addShape(boat);
 		RightTriangle boatFront = new RightTriangle((new Point(400, 425)), 30, 50, Color.YELLOW, true);
 		drawPanel.addShape(boatFront);
+		Oval hat = new Oval((new Point(235, 243)), 110, 15, Color.gray, true);
+		drawPanel.addShape(hat);
+		Oval hatTop = new Oval((new Point(260, 230)), 55, 25, Color.gray, true);
+		drawPanel.addShape(hatTop);
 		
 		
 		add(drawPanel);
