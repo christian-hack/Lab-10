@@ -38,6 +38,8 @@ public class DrawFrame extends JFrame{
 		drawPanel.addShape(hat);
 		Oval hatTop = new Oval((new Point(260, 230)), 55, 25, Color.gray, true);
 		drawPanel.addShape(hatTop);
+		Circle sun = new Circle((new Point(-100, -50)), 250, Color.yellow, true);
+		drawPanel.addShape(sun);
 		
 		
 		add(drawPanel);

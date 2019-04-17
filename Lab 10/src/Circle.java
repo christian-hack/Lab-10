@@ -24,6 +24,8 @@ public class Circle extends Oval
     public Circle(Point pointUL, int diameter, Color color, boolean filled)
     {
         super(pointUL, diameter, diameter, color, filled);
+        location = new Point[location.length];
+        location[0] = pointUL;
     }
 
     /**
