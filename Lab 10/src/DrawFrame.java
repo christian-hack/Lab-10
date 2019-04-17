@@ -51,7 +51,7 @@ public class DrawFrame extends JFrame{
 		
 	}
 	public static void main(String[] args) {
-		new DrawFrame("AquaMan");
+		new DrawFrame("Wade in the Water");
 		
 	}
 
